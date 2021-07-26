@@ -1,0 +1,48 @@
+#body{
+	margin:auto;
+	font-family: Montserrat;	
+}
+
+img{
+	box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.6);
+}
+
+p{
+	color: #ffffff;
+	font-weight:bold;
+	font-size: 26px;
+	
+}
+.button{
+	position: fixed;
+	width: 100%;
+	height: auto;
+}
+
+.button:focus{
+	outline: none;
+}
+.heady{
+	right: 0;
+	top: 0;
+	left: 0;
+	padding:8px 5px 5px 5px;
+	background-color: #b30000;
+	}	
+a:link, a:visited {
+    color: #ffffff;
+	padding: 0px 0px;
+	text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active {
+	color: #ffffff;
+    background-color: transparent;
+}
+
+.tabcontent {
+	color: #000000;
+	font-weight:normal;
+	font-size: 20px;
+}	
