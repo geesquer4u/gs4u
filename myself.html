@@ -2,6 +2,24 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+  .collapsible {
+  background-color: #ff8080;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+}
+  .active, .collapsible:hover {
+  background-color: #ff6767;
+}
+  .content {
+  padding: 0 18px;
+  display: none;
+  #overflow: hidden;
+}
+</style>
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,12 +31,40 @@
 <a href="index.html" class="button"><i class="fa fa-chevron-circle-left" style="padding: 5px 0px;font-size:40px;color: #ffffff;"></i></a>
 <br>
 <br>
-<br>
-<div align="center"> <a href="https://www.linkedin.com/in/gowtham-sarathy-a049948a/" target="_blank"><img src="rezourzez\LinkedIN.png" style="width:79%;height:79%;border-radius:3%;"></a><div>
+<button type="button" class="collapsible">About me</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Portfolio</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Reach me on..</button>
+<div>
+  <br>
+<div align="center"> <a href="https://www.linkedin.com/in/gowtham-sarathy-a049948a/" target="_blank"><img src="rezourzez\LinkedIN.png" style="width:29%;height:29%;border-radius:3%;"></a><div>
 <br>
 <div align="center"> <a href="https://pin.it/5fR7Icx" target="_blank"><img src="rezourzez\pinterest.png" style="width:79%;height:79%;border-radius:3.3%;"></a><div>
 <br>
 <div align="center"> <a href="https://t.me/GeeSquer4U" target="_blank"><img src="rezourzez\Telegram.png" style="width:79%;height:79%;border-radius:3.3%;"></a><div>
 <br>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 </body>
 </html>
